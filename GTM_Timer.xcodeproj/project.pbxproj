@@ -83,7 +83,7 @@
 		26EAD93520BE778A00F7587E /* CADisplayLink+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+Block.h"; sourceTree = "<group>"; };
 		26EAD93620BE778A00F7587E /* CADisplayLink+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CADisplayLink+Block.m"; sourceTree = "<group>"; };
 		26EAD93920BE964A00F7587E /* GTM_Timer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTM_Timer.podspec; sourceTree = "<group>"; };
-		26EAD93A20BE964A00F7587E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		26EAD93A20BE964A00F7587E /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

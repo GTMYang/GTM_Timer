@@ -49,8 +49,56 @@ $ pod install
 
 # 使用帮助
 
-```objc
 
+```objc
+@interface TimerTestViewController () {
+    NSTimer *_nstimer;
+    dispatch_source_t _gcdtimer;
+    CADisplayLink *_displayLink;
+}
+
+@end
+
+@implementation TimerTestViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    __weak typeof(self) weakSelf = self;
+    _nstimer = [GTM_TimerFactory nstimerWithTimeInterval:1 repeats:YES block:^(NSTimer *timer) {
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf doTimer];
+    }];
+    _gcdtimer = [GTM_TimerFactory gcdTimerWithTimeInterval:1 block:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(self) strongSelf = weakSelf;
+            [strongSelf doTimer];
+        });
+    }];
+    _displayLink = [GTM_TimerFactory displayLinkWithTimeInterval:1 block:^{
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf doTimer];
+    }] ;
+    
+}
+
+- (void)doTimer {
+    static NSInteger i =0;
+    NSLog(@"----> %@ 执行了 %zi 次", self.timerTypeName, ++i);
+}
+
+
+
+- (void)dealloc
+{
+    [_nstimer invalidate];
+    dispatch_cancel(_gcdtimer);
+    [_displayLink invalidate];
+    NSLog(@"TimerTestViewController dealloc...");
+}
+
+
+@end
 
 ```
 
