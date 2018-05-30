@@ -28,6 +28,8 @@
 		26EAD93120BE72F400F7587E /* GTM_Timer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26EAD8F220BE3D6000F7587E /* GTM_Timer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26EAD93720BE778A00F7587E /* CADisplayLink+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EAD93520BE778A00F7587E /* CADisplayLink+Block.h */; };
 		26EAD93820BE778A00F7587E /* CADisplayLink+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EAD93620BE778A00F7587E /* CADisplayLink+Block.m */; };
+		26EAD93B20BE964A00F7587E /* GTM_Timer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 26EAD93920BE964A00F7587E /* GTM_Timer.podspec */; };
+		26EAD93C20BE964A00F7587E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26EAD93A20BE964A00F7587E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		26EAD92E20BE6B6500F7587E /* TimerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTestViewController.m; sourceTree = "<group>"; };
 		26EAD93520BE778A00F7587E /* CADisplayLink+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+Block.h"; sourceTree = "<group>"; };
 		26EAD93620BE778A00F7587E /* CADisplayLink+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CADisplayLink+Block.m"; sourceTree = "<group>"; };
+		26EAD93920BE964A00F7587E /* GTM_Timer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTM_Timer.podspec; sourceTree = "<group>"; };
+		26EAD93A20BE964A00F7587E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		26EAD8E820BE3D6000F7587E = {
 			isa = PBXGroup;
 			children = (
+				26EAD93920BE964A00F7587E /* GTM_Timer.podspec */,
+				26EAD93A20BE964A00F7587E /* README.md */,
 				26EAD8F420BE3D6000F7587E /* GTM_Timer */,
 				26EAD90F20BE430100F7587E /* GTM_TimerExample */,
 				26EAD8F320BE3D6000F7587E /* Products */,
@@ -270,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EAD93C20BE964A00F7587E /* README.md in Resources */,
+				26EAD93B20BE964A00F7587E /* GTM_Timer.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
