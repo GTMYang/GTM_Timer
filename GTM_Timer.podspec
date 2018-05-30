@@ -115,6 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
+    s.ios.deployment_target = "8.0"
     s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
