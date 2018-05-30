@@ -124,14 +124,14 @@
 		26EAD8F420BE3D6000F7587E /* GTM_Timer */ = {
 			isa = PBXGroup;
 			children = (
-				26EAD8FD20BE3D6F00F7587E /* Class */,
+				26EAD8FD20BE3D6F00F7587E /* Classes */,
 				26EAD8F520BE3D6000F7587E /* GTM_Timer.h */,
 				26EAD8F620BE3D6000F7587E /* Info.plist */,
 			);
 			path = GTM_Timer;
 			sourceTree = "<group>";
 		};
-		26EAD8FD20BE3D6F00F7587E /* Class */ = {
+		26EAD8FD20BE3D6F00F7587E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				26EAD90620BE400200F7587E /* NSTimer+Weak.h */,
@@ -145,7 +145,7 @@
 				26EAD93520BE778A00F7587E /* CADisplayLink+Block.h */,
 				26EAD93620BE778A00F7587E /* CADisplayLink+Block.m */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		26EAD90F20BE430100F7587E /* GTM_TimerExample */ = {
